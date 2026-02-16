@@ -1,0 +1,173 @@
+﻿:root {
+  --bg-1: #fff8e8;
+  --bg-2: #ffd8a8;
+  --ink: #1f2937;
+  --accent: #ef4444;
+  --accent-2: #0ea5e9;
+  --card: rgba(255, 255, 255, 0.85);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  font-family: "Pretendard", "Noto Sans KR", sans-serif;
+  background: linear-gradient(140deg, var(--bg-1), var(--bg-2));
+  color: var(--ink);
+  overflow-x: hidden;
+}
+
+.bg-shape {
+  position: fixed;
+  border-radius: 999px;
+  filter: blur(4px);
+  opacity: 0.45;
+  pointer-events: none;
+  z-index: 0;
+}
+
+.bg-shape-1 {
+  width: 360px;
+  height: 360px;
+  top: -80px;
+  right: -60px;
+  background: radial-gradient(circle, #f97316, transparent 70%);
+}
+
+.bg-shape-2 {
+  width: 420px;
+  height: 420px;
+  bottom: -140px;
+  left: -120px;
+  background: radial-gradient(circle, #3b82f6, transparent 70%);
+}
+
+.app {
+  position: relative;
+  z-index: 1;
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 28px 18px 40px;
+}
+
+.app-header {
+  text-align: center;
+  margin-bottom: 18px;
+}
+
+.eyebrow {
+  margin: 0;
+  font-size: 0.8rem;
+  letter-spacing: 0.18em;
+  font-weight: 700;
+  color: #6b7280;
+}
+
+h1 {
+  margin: 8px 0 8px;
+  font-family: "Black Han Sans", sans-serif;
+  font-size: clamp(1.8rem, 3.6vw, 3rem);
+  letter-spacing: 0.02em;
+}
+
+.round-text {
+  margin: 0;
+  font-size: 1rem;
+  font-weight: 700;
+  color: #374151;
+}
+
+.match-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+}
+
+.card {
+  border: 0;
+  background: var(--card);
+  border-radius: 18px;
+  overflow: hidden;
+  cursor: pointer;
+  box-shadow: 0 14px 28px rgba(15, 23, 42, 0.12);
+  transition: transform 0.18s ease, box-shadow 0.18s ease;
+  padding: 0;
+}
+
+.card:hover {
+  transform: translateY(-6px) scale(1.01);
+  box-shadow: 0 20px 30px rgba(15, 23, 42, 0.18);
+}
+
+.card img {
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+  display: block;
+  background: #e5e7eb;
+}
+
+.card .name {
+  display: block;
+  text-align: center;
+  padding: 12px;
+  font-size: 1.08rem;
+  font-weight: 700;
+}
+
+.winner-section {
+  text-align: center;
+  background: var(--card);
+  border-radius: 22px;
+  padding: 18px;
+  box-shadow: 0 14px 28px rgba(15, 23, 42, 0.12);
+}
+
+.winner-section h2 {
+  margin: 8px 0 16px;
+  font-size: clamp(1.5rem, 3.2vw, 2.4rem);
+}
+
+.winner-card {
+  max-width: 640px;
+  margin: 0 auto;
+  border-radius: 16px;
+  overflow: hidden;
+}
+
+.winner-card img {
+  width: 100%;
+  display: block;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+}
+
+.restart-btn {
+  margin-top: 16px;
+  border: 0;
+  border-radius: 999px;
+  padding: 12px 24px;
+  font-size: 0.98rem;
+  font-weight: 700;
+  background: linear-gradient(90deg, var(--accent), var(--accent-2));
+  color: #fff;
+  cursor: pointer;
+}
+
+.hidden {
+  display: none;
+}
+
+@media (max-width: 760px) {
+  .match-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .card img,
+  .winner-card img {
+    aspect-ratio: 16 / 10;
+  }
+}

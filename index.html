@@ -1,0 +1,37 @@
+﻿<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>NBA 이상형 월드컵</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Black+Han+Sans&family=Pretendard:wght@400;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div class="bg-shape bg-shape-1"></div>
+    <div class="bg-shape bg-shape-2"></div>
+
+    <main class="app">
+      <header class="app-header">
+        <p class="eyebrow">NBA PLAYER WORLD CUP</p>
+        <h1>NBA 선수 이상형 월드컵</h1>
+        <p id="roundText" class="round-text">16강</p>
+      </header>
+
+      <section id="matchSection" class="match-grid"></section>
+
+      <section id="winnerSection" class="winner-section hidden">
+        <p class="eyebrow">최종 우승</p>
+        <h2 id="winnerName"></h2>
+        <div class="winner-card">
+          <img id="winnerImage" alt="우승 선수" />
+        </div>
+        <button id="restartBtn" class="restart-btn" type="button">다시 하기</button>
+      </section>
+    </main>
+
+    <script src="./app.js"></script>
+  </body>
+</html>
