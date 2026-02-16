@@ -14,7 +14,23 @@
   { name: "Trae Young", image: "https://cdn.nba.com/headshots/nba/latest/1040x760/1629027.png" },
   { name: "Shai Gilgeous-Alexander", image: "https://cdn.nba.com/headshots/nba/latest/1040x760/1628983.png" },
   { name: "Anthony Edwards", image: "https://cdn.nba.com/headshots/nba/latest/1040x760/1630162.png" },
-  { name: "Victor Wembanyama", image: "https://cdn.nba.com/headshots/nba/latest/1040x760/1641705.png" }
+  { name: "Victor Wembanyama", image: "https://cdn.nba.com/headshots/nba/latest/1040x760/1641705.png" },
+  { name: "Damian Lillard", image: "https://cdn.nba.com/headshots/nba/latest/1040x760/203081.png" },
+  { name: "Kyrie Irving", image: "https://cdn.nba.com/headshots/nba/latest/1040x760/202681.png" },
+  { name: "Donovan Mitchell", image: "https://cdn.nba.com/headshots/nba/latest/1040x760/1628378.png" },
+  { name: "Jaylen Brown", image: "https://cdn.nba.com/headshots/nba/latest/1040x760/1627759.png" },
+  { name: "Paolo Banchero", image: "https://cdn.nba.com/headshots/nba/latest/1040x760/1631094.png" },
+  { name: "Tyrese Haliburton", image: "https://cdn.nba.com/headshots/nba/latest/1040x760/1630169.png" },
+  { name: "Domantas Sabonis", image: "https://cdn.nba.com/headshots/nba/latest/1040x760/1627734.png" },
+  { name: "De'Aaron Fox", image: "https://cdn.nba.com/headshots/nba/latest/1040x760/1628368.png" },
+  { name: "LaMelo Ball", image: "https://cdn.nba.com/headshots/nba/latest/1040x760/1630163.png" },
+  { name: "Zion Williamson", image: "https://cdn.nba.com/headshots/nba/latest/1040x760/1629627.png" },
+  { name: "Brandon Ingram", image: "https://cdn.nba.com/headshots/nba/latest/1040x760/1627742.png" },
+  { name: "Bam Adebayo", image: "https://cdn.nba.com/headshots/nba/latest/1040x760/1628389.png" },
+  { name: "Jamal Murray", image: "https://cdn.nba.com/headshots/nba/latest/1040x760/1627750.png" },
+  { name: "Karl-Anthony Towns", image: "https://cdn.nba.com/headshots/nba/latest/1040x760/1626157.png" },
+  { name: "Paul George", image: "https://cdn.nba.com/headshots/nba/latest/1040x760/202331.png" },
+  { name: "James Harden", image: "https://cdn.nba.com/headshots/nba/latest/1040x760/201935.png" }
 ];
 
 const roundText = document.getElementById("roundText");
